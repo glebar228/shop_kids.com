@@ -1,0 +1,377 @@
+/** @format */
+
+:root {
+  --fontPangolin: "Pangolin", sans-serif;
+  --colortext: rgba(27, 4, 72, 1);
+}
+
+.wrapper-sale {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 243, 224, 1),
+    rgba(255, 255, 255, 1)
+  );
+  width: 100%;
+  min-height: 1619px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*padding: 0 144px;*/
+}
+
+.wrapper-text-sale {
+  padding: 0 30px;
+  margin-top: 35px;
+  /*max-width: 1636px;*/
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.gaps {
+  width: 109px;
+}
+
+.text-router {
+  font-size: 20px;
+  font-family: var(--fontPangolin);
+}
+
+.text-router span:nth-child(1) {
+  color: rgba(0, 0, 0, 0.38);
+}
+
+.text-router span:nth-child(2) {
+  color: var(--colortext);
+  border-bottom: 1px solid;
+}
+
+.text-sale {
+  color: var(--colortext);
+  font-size: 48px;
+  font-family: var(--fontPangolin);
+}
+
+.wrapper-sale-card {
+  margin-top: 25px;
+  max-width: 1636px;
+  width: 100%;
+  min-height: 780px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: space-around;
+  row-gap: 30px;
+  padding: 10px;
+}
+
+.crad-sale {
+  background-color: #fff;
+  max-width: 405px;
+  width: 100%;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  row-gap: 15px;
+  justify-content: space-between;
+  border-radius: 20px;
+}
+
+.img-sale {
+  width: 100%;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+
+.title-sale-card {
+  color: var(--colortext);
+  font-size: 28px;
+  font-family: var(--fontPangolin);
+  letter-spacing: 4px;
+}
+
+.desc-sale-card {
+  color: var(--colortext);
+  font-size: 24px;
+  font-family: var(--fontPangolin);
+}
+
+#btn-sale-card {
+  transition: all 0.3s ease;
+  cursor: pointer;
+  height: 50px;
+  background-color: rgba(73, 215, 243, 1);
+  color: var(--colortext);
+  font-size: 32px;
+  font-family: var(--fontPangolin);
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#btn-sale-card:hover {
+  background-color: rgb(124, 230, 251);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+}
+
+.wrapper-question-bg {
+  width: 100%;
+  border-bottom: 1px solid;
+}
+
+.wrapper-questions {
+  padding: 0 30px;
+  width: 100%;
+  margin-top: 35px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  justify-content: space-between;
+}
+
+.nav-questions {
+  display: flex;
+  column-gap: 90px;
+}
+
+.nav-questions li {
+  color: var(--colortext);
+  font-size: 32px;
+  font-family: var(--fontPangolin);
+  letter-spacing: 4px;
+}
+
+.img-fixiky {
+  max-width: 384px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.wrapper-form {
+  margin-top: 90px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 35px;
+}
+
+.form-sale {
+  display: flex;
+  flex-direction: column;
+  max-width: 775px;
+  width: 100%;
+}
+
+.text-form {
+  color: var(--colortext);
+  font-size: 24px;
+  font-family: var(--fontPangolin);
+}
+
+.wrapper-input-button {
+  width: 100%;
+  margin-top: 25px;
+  display: flex;
+  column-gap: 24px;
+}
+
+.wrapper-input-button input {
+  padding-left: 25px;
+  width: 100%;
+  font-size: 24px;
+  font-family: var(--fontPangolin);
+  height: 60px;
+  outline: none;
+  border-radius: 10px;
+  border: 1px solid rgba(27, 4, 72, 0.53);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#btn-submit-sale {
+  transition: all 0.3s ease;
+  cursor: pointer;
+  background-color: aqua;
+  width: 70px;
+  height: 60px;
+  border-radius: 5px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#btn-submit-sale:hover {
+  background-color: rgb(3, 184, 184);
+}
+
+label {
+  margin-top: 40px;
+  color: var(--colortext);
+  font-size: 22px;
+  font-family: var(--fontPangolin);
+  display: flex;
+  align-items: center;
+  column-gap: 24px;
+}
+
+.p-befor {
+  position: relative;
+}
+
+.p-befor::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 46%;
+  height: 1px;
+  background-color: grey;
+}
+
+.inputCheck {
+  background-color: rgba(0, 238, 246, 1);
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.ckeckedmark {
+  position: relative;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  width: 50px;
+  height: 45px;
+  background-color: rgba(0, 238, 246, 1);
+  border-radius: 5px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.inputCheck + .ckeckedmark {
+  background-color: rgb(85, 214, 85);
+}
+
+.inputCheck:checked + .ckeckedmark::after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 19px;
+  top: 7px;
+  width: 10px;
+  height: 20px;
+  border: solid #fff;
+  border-width: 0 5px 5px 0;
+  transform: rotate(45deg);
+}
+
+.wrapper-addres-sale {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.wrapper-addres-sale li {
+  color: var(--colortext);
+  font-size: 24px;
+  font-family: var(--fontPangolin);
+}
+
+@media (max-width: 966px) {
+  .wrapper-questions {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .nav-questions {
+    column-gap: 20px;
+  }
+
+  .nav-questions li {
+    font-size: 24px;
+  }
+
+  .wrapper-form {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 790px) {
+  .wrapper-form p::before {
+    display: none;
+  }
+
+  .wrapper-form {
+    text-align: center;
+  }
+
+  .p-befor {
+    font-size: 16px;
+  }
+
+  .wrapper-addres-sale li {
+    font-size: 16px;
+  }
+
+  label {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px 30px;
+    margin-bottom: 30px;
+  }
+
+  .ckeckedmark {
+    position: relative;
+    top: 0;
+    left: 20px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    background-color: rgba(0, 238, 246, 1);
+    border-radius: 5px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .inputCheck + .ckeckedmark {
+    background-color: rgb(85, 214, 85);
+  }
+
+  .inputCheck:checked + .ckeckedmark::after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 8px;
+    width: 7px;
+    height: 12px;
+    border: solid #fff;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+  }
+}
+
+@media (max-width: 670px) {
+  .nav-questions {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 575px) {
+  label {
+    flex-direction: column-reverse;
+  }
+
+  .ckeckedmark {
+    left: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .wrapper-text-sale {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
